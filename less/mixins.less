@@ -1,1 +1,13 @@
 // Mixins in here
+.style(@color; @background-color; @padding) {
+    color: @color; 
+    background-color: @background-color;
+    padding: @padding;
+ }
+
+ .btn {
+    .style( @shark, @eastern-blue, 10px);
+    border-radius: 10px;
+    font-size: 1.4em; 
+    text-align: center;
+ }
